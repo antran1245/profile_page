@@ -26,7 +26,7 @@
                         <img src="images/anne-s.jpg" alt="anne" class="card-image" />
                     </header>
                     <div id="info-content">
-                        <h1>Jane Doe</h1>
+                        <h1 id="info-name">Jane Doe</h1>
                         <h3>
                             <img src="icons/map-marker.png" alt="map marker" class="info-icon"/>
                             Seattle
@@ -34,7 +34,7 @@
                         <p>Developer | Engineer | Problem Solver</p>
                         <p>Master of shadows and the Internet!</p>
                         <p id="edit-profile">
-                            <a href="">
+                            <a href="#" onclick="editProfile()">
                                 <img src="icons/gear.png" alt="gear" class="info-icon"/>
                                 edit profile
                             </a>
@@ -55,38 +55,38 @@
             <div class="col-2">
                 <div id="request-card" class="card">
                     <header class="black-header">
-                        <div class="amount">
+                        <div class="amount" id="request-amount">
                             2
                         </div>
                         <h3>Connection Request</h3>
                     </header>
                     <div id="request-content">
-                        <div class="entry">
+                        <div class="entry" id="adrien-s">
                             <div class="entry-name">
                                 <img src="images/adrien-s.jpg" alt="adrien" class="icon"/>
                                 Adrien S
                             </div>
                             <div class="entry-buttons">
-                                <img src="icons/accept-circle.png" alt="accept" class="icon"/>
-                                <img src="icons/close-circle.png" alt="close" class="icon"/>
+                                <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="accept(0)"/>
+                                <img src="icons/close-circle.png" alt="close" class="icon" onclick="closeButton(0)"/>
                             </div>
                         </div>
-                        <div class="entry">
+                        <div class="entry" id="alayne-s">
                             <div class="entry-name">
                                 <img src="images/alayne-s.jpg" alt="alayne" class="icon"/>
                                 Alayne S
                             </div>
                             <div class="entry-buttons">
-                                <img src="icons/accept-circle.png" alt="accept" class="icon"/>
-                                <img src="icons/close-circle.png" alt="close" class="icon"/>
+                                <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="accept(1)"/>
+                                <img src="icons/close-circle.png" alt="close" class="icon" onclick="closeButton(1)"/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="connection-card" class="card">
                     <header class="black-header">
-                        <div class="amount">
-                            500+
+                        <div class="amount" id="connection-amount">
+                            500
                         </div>
                         <h3>Your Connections</h3>
                     </header>
